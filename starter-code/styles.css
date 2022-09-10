@@ -1,0 +1,418 @@
+/* || Typography */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap");
+
+/* || General styles */
+:root {
+  --teal: #3ee9e5;
+  --dark-blue: #093f68;
+  --gray: #777f98;
+  --white: #ffffff;
+  --black-blue: #080c20;
+  --pink: #fc2f67;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--black-blue);
+  color: var(--white);
+  font-size: 16px;
+  line-height: 25px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 56px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 55px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h4 {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+/* || Buttons */
+/* || Forms */
+/* || Utilities */
+
+/* || Header */
+.logo {
+  width: 120px;
+  display: block;
+  margin: 40px auto 65px auto;
+}
+
+/* || Main */
+.hero-left,
+.hero-right {
+  display: none;
+}
+
+main {
+  text-align: center;
+  margin-bottom: 144px;
+}
+
+main h1 {
+  font-size: 32px;
+  line-height: 40px;
+  margin: 47px 24px 23px 24px;
+}
+
+main h1 span {
+  color: var(--teal);
+}
+
+main p {
+  color: var(--gray);
+  margin: 0 24px 32px 24px;
+}
+
+/* || Info Cards */
+.info-card {
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 24px;
+}
+
+.info-card img {
+  background-color: var(--dark-blue);
+  border-radius: 45px;
+  padding: 40px 30px;
+  margin-bottom: 32px;
+}
+
+.info-card h2 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 11px;
+}
+
+.info-card p {
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--gray);
+}
+
+/* || Pricing */
+.pricing {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.pricing-header h3 {
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 27px;
+}
+
+.pricing-header p {
+  color: var(--gray);
+  margin: 0 24px 56px 24px;
+}
+
+.pricing-card {
+  background-color: var(--dark-blue);
+  color: var(--gray);
+  position: relative;
+  text-align: left;
+  border-radius: 8px;
+  margin: 0 auto 60px auto;
+  padding: 50px 30px;
+  width: 327px;
+}
+
+.pricing-card img {
+  position: absolute;
+  top: -32px;
+  left: 25px;
+}
+
+.pricing-card h4 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 19px;
+}
+
+.pricing-card p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 26px;
+}
+
+.pricing-card h3 {
+  font-size: 40px;
+  line-height: 55px;
+  font-weight: 800;
+  margin-bottom: 19px;
+}
+
+.pricing-card ul {
+  margin-left: 18px;
+}
+
+.pricing-card ul li {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 12px;
+}
+
+.pricing-card-1 {
+  color: var(--white);
+}
+
+.pricing-card-1 p {
+  color: var(--gray);
+}
+
+.pricing-card-1 ul {
+  list-style-image: url("assets/icon-check-teal.svg");
+}
+
+.pricing-card-2 {
+  background-color: var(--teal);
+  color: var(--black-blue);
+}
+
+.pricing-card-2 h3 {
+  display: flex;
+  align-items: center;
+}
+
+.pricing-card-2 h3 span {
+  color: var(--dark-blue);
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.pricing-card-2 ul {
+  list-style-image: url("assets/icon-check.svg");
+}
+
+/* || Footer */
+footer {
+  background: url("assets/bg-footer-squiggle.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 144px;
+  padding: 0 24px 164px 24px;
+  text-align: center;
+}
+
+footer h5 {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+footer input {
+  border-radius: 24px;
+  border: none;
+  color: var(--gray);
+  background-color: var(--dark-blue);
+  padding: 15px;
+  margin-bottom: 15px;
+  display: block;
+  width: 100%;
+}
+
+footer button {
+  border-radius: 24px;
+  border: none;
+  color: var(--black-blue);
+  background-color: var(--teal);
+  padding: 15px;
+  display: block;
+  width: 100%;
+}
+
+footer button:hover {
+  cursor: pointer;
+  background-color: var(--white);
+}
+
+/* || Medium devices */
+@media (min-width: 768px) {
+  .logo {
+    margin: 48px auto 77px 39px;
+  }
+
+  .mobile-hero-img {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    position: relative;
+  }
+
+  .hero-left,
+  .hero-right {
+    display: block;
+    width: 314px;
+    height: 356px;
+  }
+
+  .hero-left {
+    position: absolute;
+    left: -169px;
+  }
+
+  .hero-right {
+    position: absolute;
+    right: -169px;
+  }
+
+  .hero-content {
+    background: url("assets/bg-hero-squiggle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 457px;
+  }
+
+  .info-cards {
+    width: 573px;
+    margin: 0 auto;
+  }
+
+  .info-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .info-card-content {
+    margin-left: 53px;
+  }
+
+  .info-card:nth-child(even) {
+    position: relative;
+    left: -50px;
+  }
+
+  .pricing-header p {
+    width: 573px;
+    margin: 0 auto 80px auto;
+  }
+
+  .pricing-card {
+    width: 573px;
+  }
+
+  footer form {
+    display: flex;
+    align-items: center;
+    width: 476px;
+    margin: 0 auto;
+  }
+
+  footer form input {
+    margin: 0;
+    margin-right: 10px;
+  }
+
+  footer form button {
+    flex: 1 30%;
+  }
+}
+
+/* || Large Devices */
+@media (min-width: 1440px) {
+  .logo {
+    margin: 81px auto 114px 165px;
+  }
+
+  .hero-left,
+  .hero-right {
+    display: block;
+    width: 408px;
+    height: 459px;
+  }
+
+  .hero-left {
+    position: absolute;
+    left: -53px;
+  }
+
+  .hero-right {
+    position: absolute;
+    right: -53px;
+  }
+
+  .hero-content {
+    width: 544px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .info-cards {
+    margin-top: 200px;
+    width: 1110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 255px;
+    text-align: left;
+  }
+
+  .info-card:nth-child(even) {
+    position: relative;
+    left: 0px;
+    top: 40px;
+  }
+
+  .info-card-content {
+    margin: 0 auto;
+  }
+
+  .pricing-header h3 {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pricing-card {
+    margin: 20px;
+  }
+
+  footer h5 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
