@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Maker Pre Landing Page](https://maker-pre-landing-page-demo.netlify.app/)
 
 ## My process
 
